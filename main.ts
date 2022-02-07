@@ -255,3 +255,10 @@ let picnic_food_text_list = [
 "Cherry",
 "Cake"
 ]
+picnicFood.setPosition(82, 68)
+for (let index = 0; index <= 4; index++) {
+    picnicFood.setImage(picnic_food_images_list[index])
+    pause(500)
+}
+picnicFood.destroy()
+let userGuess = game.askForString("What was in Yogi's picnic basket?")
